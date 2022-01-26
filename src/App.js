@@ -8,12 +8,6 @@ function App() {
 
   const [game, setGames] = useState([]);
 
-  const remove = async (name) => {
-    setGames((oldGames) => oldGames.filter((t) => t !== name));
-  };
-
-  console.log("kolla", game);
-
   return (
     <div className="App">
       <GetRandom game={game}/>
