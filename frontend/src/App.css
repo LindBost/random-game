@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  padding: 30px 50px 30px 50px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
