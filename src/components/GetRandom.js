@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './GetRandom.css';
 
 const GetRandom = ({game}) => {
     const [random, setRandom] = useState([]);
@@ -10,7 +11,7 @@ const GetRandom = ({game}) => {
 
     return (
         <div>
-            <button onClick={handleRandom}>get random</button>
+            <button className="btn" onClick={handleRandom}>get random</button>
             <p>{random}</p>
         </div>
     )

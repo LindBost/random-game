@@ -1,4 +1,5 @@
 import React from "react";
+import './GameForm.css';
 
 const RemoveGame = ({game, setGames}) => {
 
@@ -7,13 +8,13 @@ const RemoveGame = ({game, setGames}) => {
       };
 
     return (
-        <div>
+        <div id="foo">
             <ul>
                 <>
                     {game.map((games) => (
                         <>
-                            <li>{games}</li>
-                            <button className="App-button" onClick={() => remove(games)}>
+                            <li className="content">{games}</li>
+                            <button className="delete-btn" onClick={() => remove(games)}>
                                 Delete
                             </button>
                         </>

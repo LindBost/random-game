@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './GameForm.css';
 
 const GameForm = ({game, setGames}) => {
 
@@ -26,7 +27,7 @@ const GameForm = ({game, setGames}) => {
                     name="name"
                     onChange={handleInputChange}
                 />
-                <button type="submit">Add Game</button>
+                <button className="btn-form" type="submit">Add Game</button>
             </form>
         </div>
     )

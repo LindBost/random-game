@@ -8,6 +8,7 @@ function App() {
 
   const [game, setGames] = useState([]);
 
+
   return (
     <div className="App" style={{ 
       backgroundImage: `url(${process.env.PUBLIC_URL + '/game.jpg'})`,
