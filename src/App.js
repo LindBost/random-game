@@ -10,11 +10,15 @@ function App() {
 
   return (
     <div className="App">
-      <GetRandom game={game}/>
-      <GameForm game={game} setGames={setGames}/>
-    <h4>vilka val har vi</h4>
-      <RemoveGame game={game} setGames={setGames}/>
-  </div>
+      <div className="grid-container">
+        <GetRandom game={game} />
+        <GameForm game={game} setGames={setGames} />
+        <div className="three">
+          <h4>vilka val har vi?</h4>
+          <RemoveGame game={game} setGames={setGames} />
+        </div>
+      </div>
+    </div>
   );
 }
 
