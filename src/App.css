@@ -1,14 +1,25 @@
 .App {
   text-align: center;
+  padding: 50px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  background-color: rgb(243, 241, 241);
+  border: 1px solid black;
+}
+
+.grid-content {
+  margin: 20px;  
 }
 
 .three {
   grid-column: 1;
   grid-row: 4;
+}
+
+h1 {
+  color: rgb(243, 241, 241);
 }
