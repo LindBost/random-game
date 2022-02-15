@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div className="App" style={{ 
+    <div className="App" style={{
       backgroundImage: `url(${process.env.PUBLIC_URL + '/game.jpg'})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
@@ -18,18 +18,19 @@ function App() {
       height: '100vh'
     }}>
       <h1>Vad ska vi spela idag?</h1>
-      <div className="grid-container">
-        <div className="grid-content">
-          <GetRandom game={game} />
+      <div className="container">
+        <div className="grid-container">
+          <div className="grid-content">
+            <GetRandom game={game} />
+          </div>
+          <div className="grid-content">
+            <GameForm game={game} setGames={setGames} />
+          </div>
         </div>
-        <div className="grid-content">
-          <GameForm game={game} setGames={setGames} />
-        </div>
-        <div className="three">
+        <div className="game-container">
           <h4>vilka val har vi?</h4>
           <RemoveGame game={game} setGames={setGames} />
         </div>
-
       </div>
     </div>
   );

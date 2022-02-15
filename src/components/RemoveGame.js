@@ -1,5 +1,5 @@
 import React from "react";
-import './GameForm.css';
+import './RemoveGame.css';
 
 const RemoveGame = ({game, setGames}) => {
 
@@ -8,20 +8,18 @@ const RemoveGame = ({game, setGames}) => {
       };
 
     return (
-        <div id="foo">
-            <ul>
+            <ul className="list">
                 <>
                     {game.map((games) => (
-                        <>
+                        <div className="content-list">
                             <li className="content">{games}</li>
                             <button className="delete-btn" onClick={() => remove(games)}>
                                 Delete
                             </button>
-                        </>
+                        </div>
                     ))}
                 </>
             </ul>
-        </div>
     )
 };
 
