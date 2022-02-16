@@ -18,7 +18,6 @@ const GameForm = ({game, setGames}) => {
         setInput(event.target.value);
       };
 
-      // console.log('KOLLA', game)
     return (
         <div>
             <form onSubmit={addGame}>
