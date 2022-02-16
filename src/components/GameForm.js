@@ -7,7 +7,9 @@ const GameForm = ({game, setGames}) => {
     
     const addGame = async (event) => {
         event.preventDefault();
-        const newGame = [input];
+        // const newGame = [input];
+        console.log('här')
+        const newGame = {name: input, counter: 0}
     
         setGames([...game, newGame]);
         setInput("");
@@ -17,6 +19,7 @@ const GameForm = ({game, setGames}) => {
         setInput(event.target.value);
       };
 
+      console.log('KOLLA', game)
     return (
         <div>
             <form onSubmit={addGame}>
