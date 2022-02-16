@@ -12,7 +12,7 @@ const GetRandom = ({game}) => {
     return (
         <div className="random-container">
             <button className="btn" onClick={handleRandom}>get random</button>
-            <p>{random}</p>
+            <p>{random.name}</p>
         </div>
     )
 };

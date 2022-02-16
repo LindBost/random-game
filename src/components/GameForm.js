@@ -7,8 +7,7 @@ const GameForm = ({game, setGames}) => {
     
     const addGame = async (event) => {
         event.preventDefault();
-        // const newGame = [input];
-        console.log('här')
+        // const newGame = [input]
         const newGame = {name: input, counter: 0}
     
         setGames([...game, newGame]);

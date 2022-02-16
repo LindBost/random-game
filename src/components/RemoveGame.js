@@ -16,11 +16,15 @@ const RemoveGame = ({ game, setGames }) => {
  
 
          setGames(oldGames => oldGames.map((t) => {
-             console.log('t', t)
+             console.log('t', oldGames)
+             console.log('alex', games)
              if(t.name === games.name) {
                  // setCount(count + 1); 
-                 const newUpdate = {...t, counter: +1}
+                 const newUpdate = {...t, counter: t.counter +1}
+                 console.log('newUpdate', newUpdate)
                  return newUpdate;  
+             } else {
+                 return;
              }
               
          }))  
@@ -29,7 +33,6 @@ const RemoveGame = ({ game, setGames }) => {
         // console.log('count', count)
         // const updatedGame = { name: game, counter: count };
         //setGames([...game, updatedGame]);
-        console.log('gamezzz', game)
     }
     return (
         <ul className="list">
