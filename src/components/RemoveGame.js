@@ -10,13 +10,13 @@ const RemoveGame = ({ game, setGames }) => {
 
 
     const addRating = async (games) => {
-         console.log('updateRating', games)
- 
-        const newGame = game.map((value) => {
-            if(value.name === games.name){
-                 const newAlex = {...value, counter: value.counter +1}
+        console.log('updateRating', games)
 
-                 return newAlex;
+        const newGame = game.map((value) => {
+            if (value.name === games.name) {
+                const newAlex = { ...value, counter: value.counter + 1 }
+
+                return newAlex;
             }
             else {
                 return value;
@@ -33,11 +33,11 @@ const RemoveGame = ({ game, setGames }) => {
                 {game.map((games) => {
                     console.log('games!!', games.name);
                     return <div className="content-list">
-                        <li key={games.name}className="content">{games.name}{games.counter}</li>
-                        <button className="delete-btn" onClick={() => addRating(games)}>counter</button>
-                        <button className="delete-btn" onClick={() => remove(games)}>
-                            Delete
-                        </button>
+                        <li key={games.name} className="content">{games.name}{games.counter}</li>
+                            <button className="delete-btn" onClick={() => addRating(games)}>counter</button>
+                            <button className="delete-btn" onClick={() => remove(games)}>
+                                Delete
+                            </button>
                     </div>
                 })}
             </>
