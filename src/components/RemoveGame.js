@@ -34,10 +34,12 @@ const RemoveGame = ({ game, setGames }) => {
                     console.log('games!!', games.name);
                     return <div className="content-list">
                         <li key={games.name} className="content">{games.name}{games.counter}</li>
+                        <div className="btn-group">
                             <button className="delete-btn" onClick={() => addRating(games)}>counter</button>
                             <button className="delete-btn" onClick={() => remove(games)}>
                                 Delete
                             </button>
+                        </div>
                     </div>
                 })}
             </>

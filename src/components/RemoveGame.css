@@ -20,20 +20,26 @@ color:#000000;
 background-color:#FFFFFF;
 }
 
+.btn-group {
+
+}
+
 .content {
     display: flex;
     justify-content: flex-start;
     /* width: 100%;
     margin-right: 10px; */
-    width: 100px;
+    /* width: 100px; */
+    width: fit-content;
     text-align: start;
 }
 
 .content-list {
     display: flex;
-    /* width: 20%; */
+    width: 40%;
     justify-content: space-between;
     margin-bottom: 10px;
+    /* width: fit-content; */
 }
 
 .list {
