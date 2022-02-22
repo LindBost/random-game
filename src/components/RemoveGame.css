@@ -21,7 +21,9 @@ background-color:#FFFFFF;
 }
 
 .btn-group {
-
+    display: flex;
+    flex-direction: row;
+    max-height: 35px;
 }
 
 .content {
